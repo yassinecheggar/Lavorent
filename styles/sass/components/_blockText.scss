@@ -1,7 +1,7 @@
 .block-text-style {
     .text-block {
         margin: 5pc 0;
-        max-width: 70%;
+
         padding-left: 40px;
         border-left: solid 1px orange;
 
@@ -13,6 +13,12 @@
         .button-conatiner {
             display: flex;
             gap: 12px;
+        }
+    }
+
+    @include respond(tab-port-sm) {
+        .text-block {
+            max-width: 90%;
         }
     }
 }

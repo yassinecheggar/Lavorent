@@ -1,0 +1,9 @@
+.bloc-banner .container {
+  display: flex;
+}
+.bloc-banner .container img {
+  width: 30%;
+}
+.bloc-banner .container .item {
+  width: 70%;
+}

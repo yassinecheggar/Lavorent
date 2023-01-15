@@ -111,19 +111,26 @@ body {
   cursor: pointer;
 }
 
-.lola .text-block, .bloc-quote .text-block {
+.block-text-style .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-push .items-container .item .text-block {
   margin: 5pc 0;
   max-width: 70%;
   padding-left: 40px;
   border-left: solid 1px orange;
 }
-.lola .text-block .title, .bloc-quote .text-block .title {
+.block-text-style .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 45px;
   color: #4B555F;
 }
-.lola .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner {
+.block-text-style .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
   display: flex;
   gap: 12px;
+}
+
+.block-text-style-sm .text-block, .bloc-push .items-container .item .text-block {
+  margin: 50px 0;
+}
+.block-text-style-sm .text-block .title, .bloc-push .items-container .item .text-block .title {
+  font-size: 23px;
 }
 
 .top-bar {
@@ -324,21 +331,6 @@ nav .hidden-container {
     display: flex !important;
   }
 }
-.bloc-header .text-block, .bloc-push .items-container .item .text-block {
-  margin: 5pc 0;
-  max-width: 70%;
-  padding-left: 40px;
-  border-left: solid 1px orange;
-}
-.bloc-header .text-block .title, .bloc-push .items-container .item .text-block .title {
-  font-size: 45px;
-  color: #4B555F;
-}
-.bloc-header .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
-  display: flex;
-  gap: 12px;
-}
-
 .bloc-quote .text-block {
   border: none;
 }
@@ -354,12 +346,6 @@ nav .hidden-container {
   min-width: 264px;
   margin: auto;
   padding-bottom: 40px;
-}
-.bloc-push .items-container .item .text-block {
-  margin: 50px 0;
-}
-.bloc-push .items-container .item .text-block .title {
-  font-size: 23px;
 }
 .bloc-push .items-container .item img {
   width: -webkit-fill-available;
