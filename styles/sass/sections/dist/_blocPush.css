@@ -1,0 +1,13 @@
+.bloc-push .items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: center;
+}
+.bloc-push .items-container .item {
+  width: 30%;
+  margin: auto;
+}
+.bloc-push .items-container .item img {
+  width: -webkit-fill-available;
+}

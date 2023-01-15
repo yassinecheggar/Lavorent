@@ -1,0 +1,20 @@
+.bloc-push {
+    .items-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+
+        .item {
+            width: 30%;
+            min-width: 264px;
+            margin: auto;
+            padding-bottom: 40px;
+            @extend .block-text-style-sm;
+
+            img {
+                width: -webkit-fill-available;
+            }
+        }
+    }
+}
