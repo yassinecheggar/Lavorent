@@ -432,10 +432,7 @@ nav .hidden-container {
 
 .bloc-testimonial {
   background-color: #F4F4F4;
-  padding-top: 50px;
-}
-.bloc-testimonial .header-container .text-block {
-  padding-top: 5pc;
+  padding: 5pc 0;
 }
 .bloc-testimonial .testimonials-container {
   display: flex;
@@ -467,4 +464,24 @@ nav .hidden-container {
 }
 .bloc-promo .item {
   width: 50%;
+}
+.bloc-promo .item img {
+  width: -webkit-fill-available;
+}
+.bloc-promo .item .text-bloc-container {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 48em) {
+  .bloc-promo .item {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .bloc-promo .item .text-bloc-container {
+    padding: 12px 12px;
+  }
 }

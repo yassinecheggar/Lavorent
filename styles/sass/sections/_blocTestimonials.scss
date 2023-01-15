@@ -1,13 +1,13 @@
 .bloc-testimonial {
     background-color: $light-grey;
-    padding-top: 50px;
+    padding: 5pc 0;
 
     .header-container {
         @extend .block-text-style;
 
-        .text-block {
-            padding-top: 5pc;
-        }
+        // .text-block {
+        //     padding-top: 5pc;
+        // }
     }
 
     .testimonials-container {
