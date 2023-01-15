@@ -1,0 +1,22 @@
+.bloc-partenaire .section-padding {
+  padding: 60px 0;
+}
+.bloc-partenaire .brand-carousel {
+  background: #eee;
+  margin-top: 10%;
+}
+.bloc-partenaire .owl-dots {
+  text-align: center;
+}
+.bloc-partenaire .owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #222222 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.bloc-partenaire .owl-dot.active {
+  background-color: #FF170F !important;
+}

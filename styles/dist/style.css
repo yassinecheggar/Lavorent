@@ -86,7 +86,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d2d2d2;
+  background: #F4F4F4;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -111,25 +111,29 @@ body {
   cursor: pointer;
 }
 
-.block-text-style .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 5pc 0;
-  max-width: 70%;
   padding-left: 40px;
   border-left: solid 1px orange;
 }
-.block-text-style .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 45px;
   color: #4B555F;
 }
-.block-text-style .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
+.block-text-style .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
   display: flex;
   gap: 12px;
 }
+@media (max-width: 48em) {
+  .block-text-style .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+    max-width: 90%;
+  }
+}
 
-.block-text-style-sm .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style-sm .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 50px 0;
 }
-.block-text-style-sm .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style-sm .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 23px;
 }
 
@@ -349,4 +353,80 @@ nav .hidden-container {
 }
 .bloc-push .items-container .item img {
   width: -webkit-fill-available;
+}
+
+.bloc-banner .container {
+  display: flex;
+  background-color: #F4F4F4;
+}
+.bloc-banner .container img {
+  width: 30%;
+}
+.bloc-banner .container .text-wrapper {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-banner .container .text-wrapper .text-container {
+  width: 70%;
+  height: fit-content;
+}
+@media (max-width: 48em) {
+  .bloc-banner .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bloc-banner .container img {
+    max-width: 390px;
+  }
+  .bloc-banner .container .text-wrapper {
+    width: 100%;
+  }
+  .bloc-banner .container .text-wrapper .text-container {
+    width: 90%;
+  }
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.brand-carousel {
+  background: #eee;
+  margin-top: 10%;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #222222 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.owl-dot.active {
+  background-color: #FF170F !important;
+}
+
+/* ignore the code below */
+.link-area {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px;
+  border-radius: 40px;
+  background: tomato;
+}
+
+.link-area a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
 }
