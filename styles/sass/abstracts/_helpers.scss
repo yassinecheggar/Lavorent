@@ -24,3 +24,7 @@
 .scale-1 {
   @include scale(1.1);
 }
+
+.bd-none {
+  border: none;
+}

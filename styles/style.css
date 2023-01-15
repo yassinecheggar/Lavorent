@@ -39,6 +39,10 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   transform: scale(1.1);
 }
 
+.bd-none {
+  border: none;
+}
+
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -67,7 +71,6 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   scroll-behavior: smooth;
   margin: 0;
 }
@@ -105,6 +108,7 @@ body {
   border: solid 1px #4B555F;
   border-radius: 6px;
   padding: 4px 12px;
+  cursor: pointer;
 }
 
 .top-bar {
@@ -303,18 +307,21 @@ nav .hidden-container {
     display: flex !important;
   }
 }
-.text-block {
+.bloc-header .text-block, .bloc-quote .text-block {
   margin: 5pc 0;
   max-width: 70%;
   padding-left: 40px;
   border-left: solid 1px orange;
 }
-
-.text-block .title {
+.bloc-header .text-block .title, .bloc-quote .text-block .title {
   font-size: 45px;
+  color: #4B555F;
 }
-
-.text-block .button-conatiner {
+.bloc-header .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner {
   display: flex;
   gap: 12px;
+}
+
+.bloc-quote .text-block {
+  border: none;
 }/*# sourceMappingURL=style.css.map */

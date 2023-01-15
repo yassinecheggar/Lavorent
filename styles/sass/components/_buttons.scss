@@ -106,7 +106,7 @@
 //   color: #272727;
 // }
 .menu-btn {
-  background-color: #4B555F;
+  background-color: $solasa-grey;
   color: #FFFFFF;
   border-radius: 15px;
   padding: 8px 24px;
@@ -115,10 +115,11 @@
 }
 
 .txt-block-btn {
-  color: #4B555F;
+  color: $solasa-grey;
   background-color: white;
-  border: solid 1px #4B555F;
+  border: solid 1px $solasa-grey;
   border-radius: 6px;
   padding: 4px 12px;
+  cursor: pointer;
   @extend .scale-1
 }
