@@ -65,6 +65,11 @@ h6,
   font-weight: 500 !important;
 }
 
+p {
+  color: #4B555F;
+  font-size: 15px;
+}
+
 body {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
@@ -111,29 +116,29 @@ body {
   cursor: pointer;
 }
 
-.block-text-style .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 5pc 0;
   padding-left: 40px;
   border-left: solid 1px orange;
 }
-.block-text-style .text-block .title, .bloc-partenaire .text-block-container .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style .text-block .title, .bloc-testimonial .header-container .text-block .title, .bloc-partenaire .text-block-container .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 45px;
   color: #4B555F;
 }
-.block-text-style .text-block .button-conatiner, .bloc-partenaire .text-block-container .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
+.block-text-style .text-block .button-conatiner, .bloc-testimonial .header-container .text-block .button-conatiner, .bloc-partenaire .text-block-container .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-promo .item .text-bloc-container .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
   display: flex;
   gap: 12px;
 }
 @media (max-width: 48em) {
-  .block-text-style .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+  .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
     max-width: 90%;
   }
 }
 
-.block-text-style-sm .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 50px 0;
 }
-.block-text-style-sm .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style-sm .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 23px;
 }
 
@@ -423,4 +428,43 @@ nav .hidden-container {
 }
 .bloc-partenaire .owl-dot.active {
   background-color: #FF170F !important;
+}
+
+.bloc-testimonial {
+  background-color: #F4F4F4;
+  padding-top: 50px;
+}
+.bloc-testimonial .header-container .text-block {
+  padding-top: 5pc;
+}
+.bloc-testimonial .testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bloc-testimonial .testimonials-container .item {
+  width: 250px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.bloc-testimonial .testimonials-container .item span {
+  font-size: 64px;
+  font-weight: bold;
+}
+.bloc-testimonial .testimonials-container .item .user-info {
+  display: flex;
+  gap: 8px;
+}
+.bloc-testimonial .testimonials-container .item .user-info .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.bloc-promo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bloc-promo .item {
+  width: 50%;
 }

@@ -1,0 +1,40 @@
+.bloc-promo {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        width: 50%;
+
+
+        img {
+            width: -webkit-fill-available;
+        }
+
+        .text-bloc-container {
+            display: flex;
+            padding-left: 10%;
+            padding-right: 10%;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            @extend .block-text-style-sm;
+        }
+
+    }
+
+    @include respond(tab-port-sm) {
+        .item {
+            width: 100%;
+            padding: 12px 0;
+
+            .text-bloc-container {
+
+                padding: 12px 12px;
+
+            }
+
+        }
+
+
+    }
+}

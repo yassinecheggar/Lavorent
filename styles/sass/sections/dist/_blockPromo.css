@@ -1,0 +1,7 @@
+.bloc-promo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bloc-promo .item {
+  width: 50%;
+}
