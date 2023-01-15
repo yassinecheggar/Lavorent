@@ -5,18 +5,22 @@
 
 
 //
-.pointer{
+.pointer {
   cursor: pointer;
 }
+
 .pl-3 {
   padding-left: 3rem !important;
 }
+
 .pr-3 {
   padding-right: 3rem !important;
 }
 
-
-
 .w-100 {
   width: 100% !important;
+}
+
+.scale-1 {
+  @include scale(1.1);
 }

@@ -115,9 +115,10 @@
 }
 
 .txt-block-btn {
-  color: red;
+  color: #4B555F;
   background-color: white;
   border: solid 1px #4B555F;
   border-radius: 6px;
   padding: 4px 12px;
+  @extend .scale-1
 }

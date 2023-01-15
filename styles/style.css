@@ -32,6 +32,13 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   width: 100% !important;
 }
 
+.scale-1, .txt-block-btn {
+  transition: ease-in-out 0.2s;
+}
+.scale-1:hover, .txt-block-btn:hover {
+  transform: scale(1.1);
+}
+
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -93,7 +100,7 @@ body {
 }
 
 .txt-block-btn {
-  color: red;
+  color: #4B555F;
   background-color: white;
   border: solid 1px #4B555F;
   border-radius: 6px;
@@ -128,7 +135,6 @@ body {
 }
 
 .navigation {
-  height: 70px;
   background: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08) !important;
   position: -webkit-sticky;
@@ -223,8 +229,9 @@ nav .hidden-container {
   }
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 0 0 15px;
     flex-direction: column;
+    background: #fff;
   }
   nav ul {
     display: none;
