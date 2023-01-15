@@ -1,0 +1,234 @@
+.top-bar{
+  background-color:$bg-grey;
+  width: 100%;
+  .item-container{
+    justify-content: space-between;
+    padding:0  3rem;
+    @include flex(row);
+  }
+  .img-container{
+    @include flex(row);
+  }
+
+  .language-selector{
+    @include flex-center(row);
+    gap: 8px;
+    font-size: 12px;
+  }
+  @include respond(tab-port-sm) {
+    display: none;
+  }
+}
+
+
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.nav-container {
+  //max-width: $content-width;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(tab-port-sm) {
+    flex-direction: column;
+  }
+}
+
+.brand {
+  // position: absolute;
+  // padding-left: 20px;
+  // float: left;
+  // line-height: $nav-height;
+  // text-transform: uppercase;
+  // font-size: 1.4em;
+  
+  &:hover{
+    
+  }
+
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+nav {
+  float: right;
+  display: flex;
+ 
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a {
+        display: block;
+        padding: 10px 20px 0 20px;
+        line-height: 50px;
+        background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+        
+        
+        //  &::before {
+        //    transition: 300ms;
+        //    height: 5px;
+        //    content: "";
+        //    position: absolute;
+        //    background-color: $link-hover-color;
+        //    width: 0%;
+        //    bottom: 0px;
+        // }
+
+        // &:hover::before{
+        //   width: 70%;
+        // }
+        
+        // &:hover::before{
+        //   width: 70%;
+        // }
+
+        &:hover{
+            color:$primary-color ;
+          }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      }
+       // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .icon-container{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    padding: 0 12px;
+  }
+  .hidden-container{
+    display: flex !important;
+    flex-direction: column;
+    
+  }
+}
+
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+      width: 100%;
+      padding: $nav-height 0 15px;
+      flex-direction: column;
+    ul {
+      display: none;
+      
+      li{
+        float: none;
+        
+        a {
+          padding: 15px;
+          line-height: 20px;
+          
+          &:hover::before{
+            width: 20%;
+          }
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+    .icon-container{
+      display: none;
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $link-hover-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+  .icon-container{
+    display: flex !important;
+  }
+}

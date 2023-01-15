@@ -1,0 +1,15 @@
+.text-block {
+    margin: 5pc 0;
+    max-width: 70%;
+    padding-left: 40px;
+    border-left: solid 1px orange;
+}
+
+.text-block .title {
+    font-size: 45px;
+}
+
+.text-block .button-conatiner {
+    display: flex;
+    gap: 12px;
+}

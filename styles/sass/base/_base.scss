@@ -1,0 +1,52 @@
+html {
+  //font-size: 62.5%;
+  
+
+  &.sr .load-hidden {
+    visibility: hidden;
+  }
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: $light-grey;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+}
