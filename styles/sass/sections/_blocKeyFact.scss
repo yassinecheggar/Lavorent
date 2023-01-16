@@ -1,0 +1,30 @@
+.bloc-key-fact {
+
+    .item-container {
+        margin: auto;
+        padding: 5pc 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item {
+        @include flex(column);
+        align-items: center;
+        margin-bottom: 40px;
+        max-width: 320px;
+
+        p,
+        span {
+            text-align: center;
+        }
+
+        span {
+            margin-top: 18px;
+        }
+
+        img {
+            width: fit-content;
+        }
+    }
+}

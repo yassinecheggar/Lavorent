@@ -123,3 +123,10 @@
   cursor: pointer;
   @extend .scale-1
 }
+
+.txt-block-btn-dark {
+  @extend .txt-block-btn;
+  background-color: $solasa-grey;
+  border-color: white;
+  color: white;
+}
