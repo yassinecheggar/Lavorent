@@ -1,0 +1,19 @@
+.bloc-key-numb {
+    @include flex(row);
+    flex-wrap: wrap;
+    padding: 2pc 2pc;
+    justify-content: space-around;
+    gap: 15px;
+
+    .item {
+        @include flex(column);
+        align-items: center;
+        min-width: 150px;
+
+        span {
+            font-size: 45px;
+            font-weight: bold;
+            color: $solasa-grey;
+        }
+    }
+}

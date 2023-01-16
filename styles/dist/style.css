@@ -32,10 +32,10 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   width: 100% !important;
 }
 
-.scale-1, .txt-block-btn {
+.scale-1, .txt-block-btn, .txt-block-btn-dark {
   transition: ease-in-out 0.2s;
 }
-.scale-1:hover, .txt-block-btn:hover {
+.scale-1:hover, .txt-block-btn:hover, .txt-block-btn-dark:hover {
   transform: scale(1.1);
 }
 
@@ -107,13 +107,19 @@ body {
   border: none;
 }
 
-.txt-block-btn {
+.txt-block-btn, .txt-block-btn-dark {
   color: #4B555F;
   background-color: white;
   border: solid 1px #4B555F;
   border-radius: 6px;
   padding: 4px 12px;
   cursor: pointer;
+}
+
+.txt-block-btn-dark {
+  background-color: #4B555F;
+  border-color: white;
+  color: white;
 }
 
 .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
@@ -517,9 +523,34 @@ nav .hidden-container {
     display: flex;
     flex-direction: column;
   }
-  .bloc-frame .txt-block-btn {
+  .bloc-frame .txt-block-btn, .bloc-frame .txt-block-btn-dark {
     color: #fff;
     background-color: #4B555F;
     border-color: #fff;
   }
+}
+
+.bloc-key-fact .item-container {
+  margin: auto;
+  padding: 5pc 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bloc-key-fact .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 320px;
+}
+.bloc-key-fact .item p,
+.bloc-key-fact .item span {
+  text-align: center;
+}
+.bloc-key-fact .item span {
+  margin-top: 18px;
+}
+.bloc-key-fact .item img {
+  width: fit-content;
 }
