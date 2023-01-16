@@ -104,7 +104,6 @@
                     span {
                         font-size: 13px;
                         color: $solasa-grey;
-
                         width: 50%;
                     }
                 }
@@ -134,6 +133,11 @@
                 font-size: 30px;
             }
         }
+    }
+
+    .offer-button-container {
+        display: flex;
+        justify-content: center;
     }
 
 }

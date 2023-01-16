@@ -128,6 +128,7 @@ body {
   background-color: #4B555F;
   border-color: white;
   color: white;
+  padding: 9px 24px;
 }
 
 .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
@@ -687,4 +688,8 @@ nav .hidden-container {
 }
 .bloc-offre .offer-carousel .owl-nav button.owl-next span {
   font-size: 30px;
+}
+.bloc-offre .offer-button-container {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
