@@ -1,0 +1,50 @@
+.category-picker {
+    hr {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+
+        .item {
+            position: relative;
+            cursor: pointer;
+            // &::after {
+            //     display: inline block;
+            //     position: absolute;
+            //     width: 100%;
+            //     bottom: 0;
+            //     right: 0;
+            //     height: 3px;
+            //     background-color: $primary-color;
+            // }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color:
+                    #0087ca;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            &:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+
+            // &:hover {
+            //     border-bottom: 2px solid $primary-color;
+            //     cursor: pointer;
+            // }
+        }
+    }
+
+}

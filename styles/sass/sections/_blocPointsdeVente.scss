@@ -1,0 +1,35 @@
+.bloc-points-de-vente {
+    padding: 3rem 0;
+
+    .text-bloc-container {
+        @extend .block-text-style-sm;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        @extend .bloc-banner;
+        padding-right: 3rem;
+
+        .text-container {
+            .text-block {
+                margin: 0 0 12px 0 !important;
+            }
+
+            .address-container {
+                padding: 0 40px;
+                @include flex(column);
+
+                .address-info {
+                    @include flex(row);
+                    align-items: baseline;
+                    gap: 5px;
+
+                    i {
+                        color: $solasa-grey;
+                    }
+                }
+            }
+
+        }
+    }
+}
