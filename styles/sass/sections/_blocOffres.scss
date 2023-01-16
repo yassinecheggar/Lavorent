@@ -1,0 +1,139 @@
+.bloc-offre {
+    background-color: $light-grey;
+    padding: 5rem 0;
+
+    .text-bloc-container {
+        @extend .block-text-style-sm;
+    }
+
+    .offer-carousel {
+
+
+
+        .owl-stage {
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .owl-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
+
+        .offer-wrapper {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            max-width: 350px;
+
+
+            .offer-container {
+                @include flex(column);
+
+                .header {
+                    background-color: $primary-color;
+                    padding: 20px;
+                    @include flex(column);
+                    justify-content: flex-start;
+
+                    p {
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        font-size: 30px;
+                        font-weight: 700;
+
+                    }
+
+                    p,
+                    span {
+                        color: white;
+                    }
+                }
+
+                .content {
+                    background-color: white;
+                    @include flex(column);
+                    padding: 8px 20px;
+
+                    span {
+                        font-weight: 700;
+                        color: $solasa-grey;
+
+                        &:first-child {
+                            font-size: 28px;
+                            padding: 5px 0;
+
+                        }
+
+                        &:last-child {
+                            font-size: 20px;
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                    }
+
+                    li {
+                        position: relative;
+                        padding: 10px 0 10px 20px;
+                        font-size: 15px;
+                        color: $solasa-grey;
+                    }
+
+                    li:before {
+                        content: '✓';
+                        position: absolute;
+                        left: 0;
+                        width: 1em;
+                        height: 1em;
+
+                    }
+                }
+
+                .content-sub {
+                    background-color: white;
+                    padding: 0 40% 10px 20px;
+
+                    span {
+                        font-size: 13px;
+                        color: $solasa-grey;
+
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+
+        .owl-nav button.owl-prev {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translate(0, -50%);
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+
+        .owl-nav button.owl-next {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translate(0, -50%);
+
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+
+}

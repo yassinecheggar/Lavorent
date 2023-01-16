@@ -37,3 +37,18 @@ $(".brand-carousel").owlCarousel({
     }
   }
 });
+$(".offer-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    1000: {
+      items: 2
+    },
+    1200: {
+      items: 3
+    }
+  }
+});

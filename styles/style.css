@@ -24,6 +24,14 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   padding-left: 3rem !important;
 }
 
+.pt-1 {
+  padding-top: 1rem !important;
+}
+
+.pt-2 {
+  padding-top: 2rem !important;
+}
+
 .pr-3 {
   padding-right: 3rem !important;
 }
@@ -122,29 +130,29 @@ body {
   color: white;
 }
 
-.block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 5pc 0;
   padding-left: 40px;
   border-left: solid 1px orange;
 }
-.block-text-style .text-block .title, .bloc-testimonial .header-container .text-block .title, .bloc-partenaire .text-block-container .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style .text-block .title, .bloc-testimonial .header-container .text-block .title, .bloc-partenaire .text-block-container .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-offre .text-bloc-container .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 45px;
   color: #4B555F;
 }
-.block-text-style .text-block .button-conatiner, .bloc-testimonial .header-container .text-block .button-conatiner, .bloc-partenaire .text-block-container .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-promo .item .text-bloc-container .text-block .button-conatiner, .bloc-frame .item .text-bloc-container .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
+.block-text-style .text-block .button-conatiner, .bloc-testimonial .header-container .text-block .button-conatiner, .bloc-partenaire .text-block-container .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-offre .text-bloc-container .text-block .button-conatiner, .bloc-promo .item .text-bloc-container .text-block .button-conatiner, .bloc-frame .item .text-bloc-container .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
   display: flex;
   gap: 12px;
 }
 @media (max-width: 48em) {
-  .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+  .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
     max-width: 90%;
   }
 }
 
-.block-text-style-sm .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style-sm .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 50px 0;
 }
-.block-text-style-sm .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style-sm .text-block .title, .bloc-offre .text-bloc-container .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 23px;
 }
 
@@ -576,4 +584,107 @@ nav .hidden-container {
   font-size: 45px;
   font-weight: bold;
   color: #4B555F;
+}
+
+.bloc-offre {
+  background-color: #F4F4F4;
+  padding: 5rem 0;
+}
+.bloc-offre .offer-carousel .owl-stage {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bloc-offre .offer-carousel .owl-stage .owl-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-offre .offer-carousel .offer-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  max-width: 350px;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container {
+  display: flex;
+  flex-direction: column;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .header {
+  background-color: #0678BC;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .header p {
+  font-size: 22px;
+  font-weight: 400;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .header span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .header p,
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .header span {
+  color: white;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 20px;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content span {
+  font-weight: 700;
+  color: #4B555F;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content span:first-child {
+  font-size: 28px;
+  padding: 5px 0;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content span:last-child {
+  font-size: 20px;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content ul {
+  list-style: none;
+  padding: 0;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content li {
+  position: relative;
+  padding: 10px 0 10px 20px;
+  font-size: 15px;
+  color: #4B555F;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  width: 1em;
+  height: 1em;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content-sub {
+  background-color: white;
+  padding: 0 40% 10px 20px;
+}
+.bloc-offre .offer-carousel .offer-wrapper .offer-container .content-sub span {
+  font-size: 13px;
+  color: #4B555F;
+  width: 50%;
+}
+.bloc-offre .offer-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+}
+.bloc-offre .offer-carousel .owl-nav button.owl-prev span {
+  font-size: 30px;
+}
+.bloc-offre .offer-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+}
+.bloc-offre .offer-carousel .owl-nav button.owl-next span {
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
