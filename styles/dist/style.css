@@ -23,6 +23,11 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 .pl-3 {
   padding-left: 3rem !important;
 }
+@media (max-width: 37.5em) {
+  .pl-3 {
+    padding-left: 0 !important;
+  }
+}
 
 .pt-1 {
   padding-top: 1rem !important;
@@ -139,42 +144,58 @@ body {
   padding: 9px 24px;
 }
 
-.block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-points-de-vente .text-bloc-container .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-points-de-vente .text-bloc-container .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-points-de-vente .map-container .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 5pc 0;
   padding-left: 40px;
   border-left: solid 1px orange;
 }
-.block-text-style .text-block .title, .bloc-testimonial .header-container .text-block .title, .bloc-partenaire .text-block-container .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-points-de-vente .text-bloc-container .text-block .title, .bloc-offre .text-bloc-container .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style .text-block .title, .bloc-testimonial .header-container .text-block .title, .bloc-partenaire .text-block-container .text-block .title, .bloc-quote .text-block .title, .bloc-header .text-block .title, .block-text-style-sm .text-block .title, .bloc-points-de-vente .text-bloc-container .text-block .title, .bloc-offre .text-bloc-container .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-points-de-vente .map-container .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 45px;
   color: #4B555F;
 }
-.block-text-style .text-block .button-conatiner, .bloc-testimonial .header-container .text-block .button-conatiner, .bloc-partenaire .text-block-container .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-points-de-vente .text-bloc-container .text-block .button-conatiner, .bloc-offre .text-bloc-container .text-block .button-conatiner, .bloc-promo .item .text-bloc-container .text-block .button-conatiner, .bloc-frame .item .text-bloc-container .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
+.block-text-style .text-block .button-conatiner, .bloc-testimonial .header-container .text-block .button-conatiner, .bloc-partenaire .text-block-container .text-block .button-conatiner, .bloc-quote .text-block .button-conatiner, .bloc-header .text-block .button-conatiner, .block-text-style-sm .text-block .button-conatiner, .bloc-points-de-vente .text-bloc-container .text-block .button-conatiner, .bloc-offre .text-bloc-container .text-block .button-conatiner, .bloc-promo .item .text-bloc-container .text-block .button-conatiner, .bloc-frame .item .text-bloc-container .text-block .button-conatiner, .bloc-banner .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-points-de-vente .map-container .container .text-wrapper .text-container .text-block .button-conatiner, .bloc-push .items-container .item .text-block .button-conatiner {
   display: flex;
   gap: 12px;
 }
 @media (max-width: 48em) {
-  .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-points-de-vente .text-bloc-container .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+  .block-text-style .text-block, .bloc-testimonial .header-container .text-block, .bloc-partenaire .text-block-container .text-block, .bloc-quote .text-block, .bloc-header .text-block, .block-text-style-sm .text-block, .bloc-points-de-vente .text-bloc-container .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-points-de-vente .map-container .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
     max-width: 90%;
   }
 }
 
-.block-text-style-sm .text-block, .bloc-points-de-vente .text-bloc-container .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
+.block-text-style-sm .text-block, .bloc-points-de-vente .text-bloc-container .text-block, .bloc-offre .text-bloc-container .text-block, .bloc-promo .item .text-bloc-container .text-block, .bloc-frame .item .text-bloc-container .text-block, .bloc-banner .container .text-wrapper .text-container .text-block, .bloc-points-de-vente .map-container .container .text-wrapper .text-container .text-block, .bloc-push .items-container .item .text-block {
   margin: 50px 0;
 }
-.block-text-style-sm .text-block .title, .bloc-points-de-vente .text-bloc-container .text-block .title, .bloc-offre .text-bloc-container .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
+.block-text-style-sm .text-block .title, .bloc-points-de-vente .text-bloc-container .text-block .title, .bloc-offre .text-bloc-container .text-block .title, .bloc-promo .item .text-bloc-container .text-block .title, .bloc-frame .item .text-bloc-container .text-block .title, .bloc-banner .container .text-wrapper .text-container .text-block .title, .bloc-points-de-vente .map-container .container .text-wrapper .text-container .text-block .title, .bloc-push .items-container .item .text-block .title {
   font-size: 23px;
 }
 
-.category-picker span {
-  margin-top: 10px;
+.category-picker hr {
+  margin-bottom: 20px;
 }
 .category-picker .container {
   display: flex;
   gap: 20px;
 }
-.category-picker .container .item:hover {
-  border-bottom: 2px solid #0678BC;
+.category-picker .container .item {
+  position: relative;
   cursor: pointer;
+}
+.category-picker .container .item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.category-picker .container .item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .top-bar {
@@ -395,35 +416,35 @@ nav .hidden-container {
   width: -webkit-fill-available;
 }
 
-.bloc-banner .container {
+.bloc-banner .container, .bloc-points-de-vente .map-container .container {
   display: flex;
   background-color: #F4F4F4;
 }
-.bloc-banner .container img {
+.bloc-banner .container img, .bloc-points-de-vente .map-container .container img {
   width: 30%;
 }
-.bloc-banner .container .text-wrapper {
+.bloc-banner .container .text-wrapper, .bloc-points-de-vente .map-container .container .text-wrapper {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bloc-banner .container .text-wrapper .text-container {
+.bloc-banner .container .text-wrapper .text-container, .bloc-points-de-vente .map-container .container .text-wrapper .text-container {
   width: 70%;
   height: fit-content;
 }
 @media (max-width: 48em) {
-  .bloc-banner .container {
+  .bloc-banner .container, .bloc-points-de-vente .map-container .container {
     flex-direction: column;
     align-items: center;
   }
-  .bloc-banner .container img {
+  .bloc-banner .container img, .bloc-points-de-vente .map-container .container img {
     max-width: 390px;
   }
-  .bloc-banner .container .text-wrapper {
+  .bloc-banner .container .text-wrapper, .bloc-points-de-vente .map-container .container .text-wrapper {
     width: 100%;
   }
-  .bloc-banner .container .text-wrapper .text-container {
+  .bloc-banner .container .text-wrapper .text-container, .bloc-points-de-vente .map-container .container .text-wrapper .text-container {
     width: 90%;
   }
 }
@@ -714,14 +735,24 @@ nav .hidden-container {
 .bloc-points-de-vente {
   padding: 3rem 0;
 }
-.bloc-points-de-vente .category-picker span {
-  margin-top: 10px;
+.bloc-points-de-vente .map-container {
+  margin-top: 20px;
+  padding-right: 3rem;
 }
-.bloc-points-de-vente .category-picker .container {
+.bloc-points-de-vente .map-container .text-container .text-block {
+  margin: 0 0 12px 0 !important;
+}
+.bloc-points-de-vente .map-container .text-container .address-container {
+  padding: 0 40px;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
 }
-.bloc-points-de-vente .category-picker .container .item:hover {
-  border-bottom: 2px solid #0678BC;
-  cursor: pointer;
+.bloc-points-de-vente .map-container .text-container .address-container .address-info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+}
+.bloc-points-de-vente .map-container .text-container .address-container .address-info i {
+  color: #4B555F;
 }
