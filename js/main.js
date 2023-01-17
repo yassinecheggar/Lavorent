@@ -52,3 +52,20 @@ $(".offer-carousel").owlCarousel({
     },
   },
 });
+
+$(".history-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+
+  responsive: {
+    0: {
+      items: 3,
+    },
+    1000: {
+      items: 6,
+    },
+    1200: {
+      items: 6,
+    },
+  },
+});

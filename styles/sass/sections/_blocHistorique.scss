@@ -1,0 +1,120 @@
+.block-historique {
+    background-color: white;
+    padding: 2rem;
+
+    .text-bloc-container {
+        @extend .block-text-style-sm;
+    }
+
+    .history-wrapper {
+        @extend .bloc-banner;
+        padding: 3rem;
+
+        .container {
+            margin-bottom: 10px;
+
+            img {
+                width: 50%;
+            }
+
+            .text-wrapper {
+                width: 50%;
+            }
+        }
+
+        .text-container {
+            .text-block {
+                border: none !important;
+
+                .title {
+                    font-size: 56px !important;
+                }
+
+                p:first-of-type {
+                    font-size: 22px !important;
+                }
+
+            }
+        }
+
+    }
+
+    .history-carousel {
+        margin-top: 20px;
+
+        .owl-stage {
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .owl-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: -webkit-fill-available;
+            }
+        }
+
+        .owl-nav button.owl-prev {
+            position: absolute;
+            top: 18%;
+            left: 20px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .owl-nav button.owl-next {
+            position: absolute;
+            top: 18%;
+            right: 20px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .single-date {
+            &:hover {
+                border: 1px solid $border-color;
+                border-radius: 6px;
+                padding: 3px 12px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .carousel-title {
+        padding-left: 10px;
+    }
+
+    @include respond(tab-port-sm) {
+        padding-right: 0;
+
+        .text-container {
+            .text-block {
+                padding-left: 0 !important;
+            }
+        }
+
+        .history-wrapper {
+            padding: 0;
+
+            .container {
+
+                img {
+                    width: 100%;
+
+                }
+
+                .text-wrapper {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
